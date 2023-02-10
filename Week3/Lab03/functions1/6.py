@@ -1,0 +1,5 @@
+str = input()
+s1 = str.split()
+s1.reverse()
+s2 = " ".join(s1)
+print(s2)
