@@ -1,6 +1,8 @@
-from datetime import datetime, date
+from datetime import datetime, timedelta
 
-date_1 = date(2022, 5, 18)
-date_2 = date(2022, 7, 12)
-delta = date_2 - date_1
-print(delta.total_seconds()) #outputs seconds as float
+d = int(input())
+date_1 = datetime.today().replace(microsecond=0)
+date_2 = date_1 - timedelta(d)
+delta = date_1 - date_2
+x = delta.total_seconds() #outputs seconds in floats
+print(x)
